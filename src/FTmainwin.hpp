@@ -114,7 +114,7 @@ public:
  *
  */
 
-class FTmainwin : public wxFrame, public SigC::Object
+class FTmainwin : public wxFrame
 {
   public:
 	// ctor(s)

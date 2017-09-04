@@ -169,7 +169,7 @@ class FTspectralEngine
 	FTmodulatorI * getModulator ( unsigned int num);
 	bool hasModulator (FTmodulatorI * procmod);
 
-	SigC::Signal1<void, FTmodulatorI *> ModulatorAdded;
+	sigc::signal1<void, FTmodulatorI *> ModulatorAdded;
 
 
 	

@@ -210,7 +210,7 @@ void FTprocOrderDialog::refreshState()
 	for (; mod != mlist.end(); ++mod)
 	{
 		item.SetText (wxString::FromAscii ((*mod)->getName().c_str()));
-		item.SetData ((unsigned) (*mod));
+		item.SetData (*mod);
 		item.SetId(pos++);
 		
 		_sourceList->InsertItem(item);
@@ -230,7 +230,7 @@ void FTprocOrderDialog::refreshState()
 		for (unsigned int n=0; n < procmods.size(); ++n)
 		{
 			item.SetText (wxString::FromAscii (procmods[n]->getName().c_str()));
-			item.SetData ((unsigned) procmods[n]);
+			item.SetData (procmods[n]);
 			item.SetId (n);
 			
 			_targetList->InsertItem(item);
@@ -441,7 +441,7 @@ void FTprocOrderDialog::onAddButton(wxCommandEvent & ev)
 
 		if (proc) {
 			item.SetText (wxString::FromAscii (proc->getName().c_str()));
-			item.SetData ((unsigned)proc);
+			item.SetData (proc);
 			item.SetId (_targetList->GetItemCount());
 			
 			_targetList->InsertItem(item);

@@ -62,7 +62,7 @@ AC_SUBST(JACK_CFLAGS)
 
 
 dnl sigc++
-PKG_CHECK_MODULES(SIGCPP, sigc++-1.2 >= 0.14, have_sigc12=yes, have_sigc12=no)
+PKG_CHECK_MODULES(SIGCPP, sigc++-2.0 >= 2.0, have_sigc20=yes, have_sigc20=no)
 
     
 

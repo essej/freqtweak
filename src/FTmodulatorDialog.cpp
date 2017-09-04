@@ -39,7 +39,7 @@ using namespace std;
 #include "FTmodulatorGui.hpp"
 
 #include <sigc++/sigc++.h>
-using namespace SigC;
+using namespace sigc;
 
 enum {
 	ID_AddButton=8000,
@@ -206,7 +206,7 @@ void FTmodulatorDialog::refreshState()
 			
 			FTspectralEngine *engine = procpath->getSpectralEngine();
 
-			engine->ModulatorAdded.connect( bind (slot (*this, &FTmodulatorDialog::onModulatorAdded), i));
+			engine->ModulatorAdded.connect( sigc::bind (sigc::mem_fun(*this, &FTmodulatorDialog::onModulatorAdded), i));
 			
  			vector<FTmodulatorI*> modlist;
 			modlist.clear();
@@ -238,8 +238,8 @@ void FTmodulatorDialog::appendModGui(FTmodulatorI * mod, bool layout)
 
 	FTmodulatorGui *modgui = new FTmodulatorGui(FTioSupport::instance(), mod, _channelScroller, -1);
 	
-	modgui->RemovalRequest.connect (bind (slot (*this, &FTmodulatorDialog::onModulatorDeath), mod));
-	mod->GoingAway.connect ( slot (*this, &FTmodulatorDialog::onModulatorDeath));
+	modgui->RemovalRequest.connect (sigc::bind (sigc::mem_fun(*this, &FTmodulatorDialog::onModulatorDeath), mod));
+	mod->GoingAway.connect ( sigc::mem_fun(*this, &FTmodulatorDialog::onModulatorDeath));
 	
 	_modulatorGuis[mod] = modgui;
 	
@@ -346,7 +346,7 @@ void FTmodulatorDialog::onModulatorDeath (FTmodulatorI * mod)
 	{
 		//cerr << "deleting modgui" << endl;
 		FTmodulatorGui * modgui = _modulatorGuis[mod];
-		_channelSizer->Remove (modgui);
+		_channelSizer->Remove ((wxSizer*)modgui);
 		modgui->Show(false);
 		_channelScroller->SetClientSize(_channelScroller->GetClientSize());
 		_channelScroller->Layout();

@@ -26,7 +26,7 @@
 #include "FTprocessPath.hpp"
 #include "FTprocI.hpp"
 
-using namespace SigC;
+using namespace sigc;
 
 enum
 {
@@ -333,7 +333,7 @@ void FTmodulatorGui::init()
 	//		  1, wxEXPAND|wxALL, 2);
 
 
-	_modulator->GoingAway.connect ( slot (*this, &FTmodulatorGui::onModulatorDeath));
+	_modulator->GoingAway.connect ( sigc::mem_fun(*this, &FTmodulatorGui::onModulatorDeath));
 	
 	mainSizer->Add (controlSizer, 1, wxEXPAND|wxALL, 2);
 	

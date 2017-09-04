@@ -71,7 +71,7 @@ class FTmodulatorI
 	virtual bool getBypassed() { return _bypassed; }
 	virtual void setBypassed(bool byp) { _bypassed = byp; }
 
-	SigC::Signal1<void, FTmodulatorI *> GoingAway;
+	sigc::signal1<void, FTmodulatorI *> GoingAway;
 
 
 	

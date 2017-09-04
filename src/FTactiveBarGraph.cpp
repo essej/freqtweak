@@ -1175,7 +1175,7 @@ void FTactiveBarGraph::OnPaint(wxPaintEvent & event)
 
 void FTactiveBarGraph::paintGridlines(wxDC & dc)
 {
-	int origfunc = dc.GetLogicalFunction();
+	wxRasterOperationMode origfunc = dc.GetLogicalFunction();
 	wxPen origPen = dc.GetPen();
 	
 	dc.SetPen(_gridPen);

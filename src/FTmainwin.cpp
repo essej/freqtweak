@@ -524,7 +524,7 @@ void FTmainwin::buildGui()
 	_inspecPanel = new wxPanel(_inspecSash, -1);
 	_inspecPanel->SetBackgroundColour(*wxBLACK);
 	_inspecPanel->SetThemeEnabled(false);
-	_inspecSash->SetSashBorder(wxSASH_BOTTOM, true);
+	//_inspecSash->SetSashBorder(wxSASH_BOTTOM, true);
 	_inspecSash->SetSashVisible(wxSASH_BOTTOM, true);
 	_rowItems.push_back( _inspecSash);
 
@@ -585,7 +585,7 @@ void FTmainwin::buildGui()
 	pixbutt = _inspecSpecTypeAllButton = new PixButton(_inspecPanel, FT_InSpecTypeId, false, wxDefaultPosition, wxSize(_bwidth, _bheight));
 	_inspecSpecTypeAllButton->SetFont(_buttFont);
 	_inspecSpecTypeAllButton->SetToolTip (wxT("Spectrogram Plot"));
-	pixbutt->clicked.connect (bind (slot (*this, &FTmainwin::plot_clicked_events), pixbutt));
+	pixbutt->clicked.connect (sigc::bind (sigc::mem_fun(*this, &FTmainwin::plot_clicked_events), pixbutt));
 	pixbutt->set_normal_bitmap (wxBitmap(specplot_normal_xpm));
 	pixbutt->set_selected_bitmap (wxBitmap(specplot_selected_xpm));
 	pixbutt->set_focus_bitmap (wxBitmap(specplot_focus_xpm));
@@ -596,7 +596,7 @@ void FTmainwin::buildGui()
 	pixbutt = _inspecPlotSolidTypeAllButton = new PixButton(_inspecPanel, FT_InSpecTypeId, false, wxDefaultPosition, wxSize(_bwidth, _bheight));
 	_inspecPlotSolidTypeAllButton->SetFont(_buttFont);
 	_inspecPlotSolidTypeAllButton->SetToolTip (wxT("Filled Plot"));
-	pixbutt->clicked.connect (bind (slot (*this, &FTmainwin::plot_clicked_events), pixbutt));
+	pixbutt->clicked.connect (sigc::bind (sigc::mem_fun(*this, &FTmainwin::plot_clicked_events), pixbutt));
 	pixbutt->set_normal_bitmap (wxBitmap(barplot_normal_xpm));
 	pixbutt->set_selected_bitmap (wxBitmap(barplot_selected_xpm));
 	pixbutt->set_focus_bitmap (wxBitmap(barplot_focus_xpm));
@@ -606,7 +606,7 @@ void FTmainwin::buildGui()
 	pixbutt = _inspecPlotLineTypeAllButton = new PixButton(_inspecPanel, FT_InSpecTypeId, false, wxDefaultPosition, wxSize(_bwidth, _bheight));
 	_inspecPlotLineTypeAllButton->SetFont(_buttFont);
 	_inspecPlotLineTypeAllButton->SetToolTip (wxT("Line Plot"));
-	pixbutt->clicked.connect (bind (slot (*this, &FTmainwin::plot_clicked_events), pixbutt));
+	pixbutt->clicked.connect (sigc::bind (sigc::mem_fun(*this, &FTmainwin::plot_clicked_events), pixbutt));
 	pixbutt->set_normal_bitmap (wxBitmap(lineplot_normal_xpm));
 	pixbutt->set_selected_bitmap (wxBitmap(lineplot_selected_xpm));
 	pixbutt->set_focus_bitmap (wxBitmap(lineplot_focus_xpm));
@@ -656,7 +656,7 @@ void FTmainwin::buildGui()
 	_outspecPanel = new wxPanel(_outspecSash, -1);
 	_outspecPanel->SetBackgroundColour(*wxBLACK);
 	_outspecPanel->SetThemeEnabled(false);
-	_outspecSash->SetSashBorder(wxSASH_BOTTOM, true);
+	//_outspecSash->SetSashBorder(wxSASH_BOTTOM, true);
 	_outspecSash->SetSashVisible(wxSASH_BOTTOM, true);
 	_rowItems.push_back (_outspecSash);
 
@@ -732,7 +732,7 @@ void FTmainwin::buildGui()
 	pixbutt = _outspecSpecTypeAllButton = new PixButton(_outspecPanel, FT_OutSpecTypeId, false, wxDefaultPosition, wxSize(_bwidth, _bheight));
 	_outspecSpecTypeAllButton->SetFont(_buttFont);
 	_outspecSpecTypeAllButton->SetToolTip (wxT("Spectrogram Plot"));
-	pixbutt->clicked.connect (bind (slot (*this, &FTmainwin::plot_clicked_events), pixbutt));
+	pixbutt->clicked.connect (sigc::bind (sigc::mem_fun(*this, &FTmainwin::plot_clicked_events), pixbutt));
 	pixbutt->set_normal_bitmap (wxBitmap(specplot_normal_xpm));
 	pixbutt->set_selected_bitmap (wxBitmap(specplot_selected_xpm));
 	pixbutt->set_focus_bitmap (wxBitmap(specplot_focus_xpm));
@@ -742,7 +742,7 @@ void FTmainwin::buildGui()
 	pixbutt = _outspecPlotSolidTypeAllButton = new PixButton(_outspecPanel, FT_OutSpecTypeId, false, wxDefaultPosition, wxSize(_bwidth, _bheight));
 	_outspecPlotSolidTypeAllButton->SetFont(_buttFont);
 	_outspecPlotSolidTypeAllButton->SetToolTip (wxT("Filled Plot"));
-	pixbutt->clicked.connect (bind (slot (*this, &FTmainwin::plot_clicked_events), pixbutt));
+	pixbutt->clicked.connect (sigc::bind (sigc::mem_fun(*this, &FTmainwin::plot_clicked_events), pixbutt));
 	pixbutt->set_normal_bitmap (wxBitmap(barplot_normal_xpm));
 	pixbutt->set_selected_bitmap (wxBitmap(barplot_selected_xpm));
 	pixbutt->set_focus_bitmap (wxBitmap(barplot_focus_xpm));
@@ -752,7 +752,7 @@ void FTmainwin::buildGui()
 	pixbutt = _outspecPlotLineTypeAllButton = new PixButton(_outspecPanel, FT_OutSpecTypeId, false, wxDefaultPosition, wxSize(_bwidth, _bheight));
 	_outspecPlotLineTypeAllButton->SetFont(_buttFont);
 	_outspecPlotLineTypeAllButton->SetToolTip (wxT("Line Plot"));
-	pixbutt->clicked.connect (bind (slot (*this, &FTmainwin::plot_clicked_events), pixbutt));
+	pixbutt->clicked.connect (sigc::bind (sigc::mem_fun(*this, &FTmainwin::plot_clicked_events), pixbutt));
 	pixbutt->set_normal_bitmap (wxBitmap(lineplot_normal_xpm));
 	pixbutt->set_selected_bitmap (wxBitmap(lineplot_selected_xpm));
 	pixbutt->set_focus_bitmap (wxBitmap(lineplot_focus_xpm));
@@ -891,7 +891,7 @@ void FTmainwin::pushProcRow(FTspectrumModifier *specmod)
 	rpanel->SetThemeEnabled(false);
 	_rowPanels.push_back (rpanel);
 			
-	sash->SetSashBorder(wxSASH_BOTTOM, true);
+	//sash->SetSashBorder(wxSASH_BOTTOM, true);
 	sash->SetSashVisible(wxSASH_BOTTOM, true);
 	// need to insert this as second to last
 	wxWindow * lastrow = _rowItems.back();
@@ -931,7 +931,7 @@ void FTmainwin::pushProcRow(FTspectrumModifier *specmod)
 	PixButton * linkallbutt = pixbutt = new PixButton(rpanel, FT_LinkBase, false, wxDefaultPosition, wxSize(_bwidth,_bheight));
 	linkallbutt->SetFont(_buttFont);
 	linkallbutt->SetToolTip (wxT("Link All"));
-	pixbutt->clicked.connect (bind (slot (*this, &FTmainwin::link_clicked_events), pixbutt));
+	pixbutt->clicked.connect (sigc::bind (sigc::mem_fun(*this, &FTmainwin::link_clicked_events), pixbutt));
 	pixbutt->set_normal_bitmap (wxBitmap(link_normal_xpm));
 	pixbutt->set_selected_bitmap (wxBitmap(link_selected_xpm));
 	pixbutt->set_focus_bitmap (wxBitmap(link_focus_xpm));
@@ -943,7 +943,7 @@ void FTmainwin::pushProcRow(FTspectrumModifier *specmod)
 	PixButton * bypallbutt = pixbutt = new PixButton(rpanel, FT_BypassBase, false, wxDefaultPosition, wxSize(_bwidth,_bheight));
 	bypallbutt->SetFont(_buttFont);
 	bypallbutt->SetToolTip (wxT("Bypass All"));
-	pixbutt->clicked.connect (bind (slot (*this, &FTmainwin::bypass_clicked_events), pixbutt));
+	pixbutt->clicked.connect (sigc::bind (sigc::mem_fun(*this, &FTmainwin::bypass_clicked_events), pixbutt));
 	pixbutt->set_normal_bitmap (wxBitmap(bypass_normal_xpm));
 	pixbutt->set_selected_bitmap (wxBitmap(bypass_selected_xpm));
 	pixbutt->set_focus_bitmap (wxBitmap(bypass_focus_xpm));
@@ -956,8 +956,8 @@ void FTmainwin::pushProcRow(FTspectrumModifier *specmod)
 	PixButton * gridbutt = pixbutt = new PixButton (rpanel, FT_GridBase, false, wxDefaultPosition,  wxSize(_bwidth,_bheight));
 	gridbutt->SetFont(_buttFont);
 	gridbutt->SetToolTip (wxT("Toggle Grid\nRight-click to Adjust"));
-	pixbutt->clicked.connect (bind (slot (*this, &FTmainwin::grid_clicked_events), pixbutt));
-	pixbutt->pressed.connect (bind (slot (*this, &FTmainwin::grid_pressed_events), pixbutt));
+	pixbutt->clicked.connect (sigc::bind (sigc::mem_fun(*this, &FTmainwin::grid_clicked_events), pixbutt));
+	pixbutt->pressed.connect (sigc::bind (sigc::mem_fun(*this, &FTmainwin::grid_pressed_events), pixbutt));
 	pixbutt->set_normal_bitmap (wxBitmap(grid_normal_xpm));
 	pixbutt->set_selected_bitmap (wxBitmap(grid_selected_xpm));
 	pixbutt->set_focus_bitmap (wxBitmap(grid_focus_xpm));
@@ -970,7 +970,7 @@ void FTmainwin::pushProcRow(FTspectrumModifier *specmod)
 	PixButton * gridsnbutt = pixbutt = new PixButton (rpanel, FT_GridSnapBase, false, wxDefaultPosition,  wxSize(_bwidth,_bheight));
 	gridsnbutt->SetFont(_buttFont);
 	gridsnbutt->SetToolTip (wxT("Toggle Grid Snap"));
-	pixbutt->clicked.connect (bind (slot (*this, &FTmainwin::grid_clicked_events), pixbutt));
+	pixbutt->clicked.connect (sigc::bind (sigc::mem_fun(*this, &FTmainwin::grid_clicked_events), pixbutt));
 	pixbutt->set_normal_bitmap (wxBitmap(gridsnap_normal_xpm));
 	pixbutt->set_selected_bitmap (wxBitmap(gridsnap_selected_xpm));
 	pixbutt->set_focus_bitmap (wxBitmap(gridsnap_focus_xpm));
@@ -1249,7 +1249,7 @@ void FTmainwin::createPathStuff(int i)
 			_bypassButtons[rowcnt][i] = pixbutt;
 			//buttsizer->Add ( _bypassButtons[rowcnt][i] = new wxButton(rowpanels[i], FT_BypassBase, wxT("B"),
 			//							  wxDefaultPosition, wxSize(_bwidth,-1)), 1, 0,0);
-			pixbutt->clicked.connect (bind (slot (*this, &FTmainwin::bypass_clicked_events), pixbutt));
+ 			pixbutt->clicked.connect (sigc::bind (sigc::mem_fun(*this, &FTmainwin::bypass_clicked_events), pixbutt));
 			
 			buttsizer->Add (pixbutt, 0, 0, 0);
 
@@ -1259,7 +1259,7 @@ void FTmainwin::createPathStuff(int i)
 			_bypassButtons[rowcnt][i]->SetToolTip(wxT("Toggle Bypass"));		
 
 			pixbutt = new PixButton(rowpanels[i], FT_LinkBase, false, wxDefaultPosition, wxSize(_bwidth, -1));
-			pixbutt->clicked.connect (bind (slot (*this, &FTmainwin::link_clicked_events), pixbutt));
+			pixbutt->clicked.connect (sigc::bind (sigc::mem_fun(*this, &FTmainwin::link_clicked_events), pixbutt));
 			
 			pixbutt->set_normal_bitmap (wxBitmap(link_normal_xpm));
 			pixbutt->set_selected_bitmap (wxBitmap(link_selected_xpm));
@@ -1350,7 +1350,7 @@ void FTmainwin::createPathStuff(int i)
 		pixbutt = _inspecSpecTypeButton[i] = new PixButton(_inspecPanels[i], FT_InSpecTypeId, false, wxDefaultPosition, wxSize(_bwidth, _bheight));
 		_inspecSpecTypeButton[i]->SetFont(_buttFont);
 		_inspecSpecTypeButton[i]->SetToolTip(wxT("Spectrogram Plot"));
-		pixbutt->clicked.connect (bind (slot (*this, &FTmainwin::plot_clicked_events), pixbutt));
+		pixbutt->clicked.connect (sigc::bind (sigc::mem_fun(*this, &FTmainwin::plot_clicked_events), pixbutt));
 		pixbutt->set_normal_bitmap (wxBitmap(specplot_normal_xpm));
 		pixbutt->set_selected_bitmap (wxBitmap(specplot_selected_xpm));
 		pixbutt->set_focus_bitmap (wxBitmap(specplot_focus_xpm));
@@ -1361,7 +1361,7 @@ void FTmainwin::createPathStuff(int i)
 		pixbutt = _inspecPlotLineTypeButton[i] = new PixButton(_inspecPanels[i], FT_InSpecTypeId, false, wxDefaultPosition, wxSize(_bwidth, _bheight));
 		_inspecPlotLineTypeButton[i]->SetFont(_buttFont);
 		_inspecPlotLineTypeButton[i]->SetToolTip(wxT("Line Plot"));
-		pixbutt->clicked.connect (bind (slot (*this, &FTmainwin::plot_clicked_events), pixbutt));
+		pixbutt->clicked.connect (sigc::bind (sigc::mem_fun(*this, &FTmainwin::plot_clicked_events), pixbutt));
 		pixbutt->set_normal_bitmap (wxBitmap(lineplot_normal_xpm));
 		pixbutt->set_selected_bitmap (wxBitmap(lineplot_selected_xpm));
 		pixbutt->set_focus_bitmap (wxBitmap(lineplot_focus_xpm));
@@ -1372,7 +1372,7 @@ void FTmainwin::createPathStuff(int i)
 		pixbutt = _inspecPlotSolidTypeButton[i] = new PixButton(_inspecPanels[i], FT_InSpecTypeId, false, wxDefaultPosition, wxSize(_bwidth, _bheight));
 		_inspecPlotSolidTypeButton[i]->SetFont(_buttFont);
 		_inspecPlotSolidTypeButton[i]->SetToolTip(wxT("Filled Plot"));
-		pixbutt->clicked.connect (bind (slot (*this, &FTmainwin::plot_clicked_events), pixbutt));
+		pixbutt->clicked.connect (sigc::bind (sigc::mem_fun(*this, &FTmainwin::plot_clicked_events), pixbutt));
 		pixbutt->set_normal_bitmap (wxBitmap(barplot_normal_xpm));
 		pixbutt->set_selected_bitmap (wxBitmap(barplot_selected_xpm));
 		pixbutt->set_focus_bitmap (wxBitmap(barplot_focus_xpm));
@@ -1401,7 +1401,7 @@ void FTmainwin::createPathStuff(int i)
 		pixbutt = _outspecSpecTypeButton[i] = new PixButton(_outspecPanels[i], FT_OutSpecTypeId, false, wxDefaultPosition, wxSize(_bwidth, _bheight));
 		_outspecSpecTypeButton[i]->SetFont(_buttFont);
 		_outspecSpecTypeButton[i]->SetToolTip(wxT("Spectrogram Plot"));
-		pixbutt->clicked.connect (bind (slot (*this, &FTmainwin::plot_clicked_events), pixbutt));
+		pixbutt->clicked.connect (sigc::bind (sigc::mem_fun(*this, &FTmainwin::plot_clicked_events), pixbutt));
 		pixbutt->set_normal_bitmap (wxBitmap(specplot_normal_xpm));
 		pixbutt->set_selected_bitmap (wxBitmap(specplot_selected_xpm));
 		pixbutt->set_focus_bitmap (wxBitmap(specplot_focus_xpm));
@@ -1412,7 +1412,7 @@ void FTmainwin::createPathStuff(int i)
 		pixbutt = _outspecPlotLineTypeButton[i] = new PixButton(_outspecPanels[i], FT_OutSpecTypeId, false, wxDefaultPosition, wxSize(_bwidth, _bheight));
 		_outspecPlotLineTypeButton[i]->SetFont(_buttFont);
 		_outspecPlotLineTypeButton[i]->SetToolTip(wxT("Line Plot"));
-		pixbutt->clicked.connect (bind (slot (*this, &FTmainwin::plot_clicked_events), pixbutt));
+		pixbutt->clicked.connect (sigc::bind (sigc::mem_fun(*this, &FTmainwin::plot_clicked_events), pixbutt));
 		pixbutt->set_normal_bitmap (wxBitmap(lineplot_normal_xpm));
 		pixbutt->set_selected_bitmap (wxBitmap(lineplot_selected_xpm));
 		pixbutt->set_focus_bitmap (wxBitmap(lineplot_focus_xpm));
@@ -1423,7 +1423,7 @@ void FTmainwin::createPathStuff(int i)
 		pixbutt = _outspecPlotSolidTypeButton[i] = new PixButton(_outspecPanels[i], FT_OutSpecTypeId, false, wxDefaultPosition, wxSize(_bwidth, _bheight));
 		_outspecPlotSolidTypeButton[i]->SetFont(_buttFont);
 		_outspecPlotSolidTypeButton[i]->SetToolTip(wxT("Filled Plot"));
-		pixbutt->clicked.connect (bind (slot (*this, &FTmainwin::plot_clicked_events), pixbutt));
+		pixbutt->clicked.connect (sigc::bind (sigc::mem_fun(*this, &FTmainwin::plot_clicked_events), pixbutt));
 		pixbutt->set_normal_bitmap (wxBitmap(barplot_normal_xpm));
 		pixbutt->set_selected_bitmap (wxBitmap(barplot_selected_xpm));
 		pixbutt->set_focus_bitmap (wxBitmap(barplot_focus_xpm));
@@ -2957,7 +2957,7 @@ void FTmainwin::rebuildDisplay(bool dolink)
 					_bypassButtons[rowcnt][i] = pixbutt;
 					//buttsizer->Add ( _bypassButtons[rowcnt][i] = new wxButton(rowpanels[i], FT_BypassBase, wxT("B"),
 					//							  wxDefaultPosition, wxSize(_bwidth,-1)), 1, 0,0);
-					pixbutt->clicked.connect (bind (slot (*this, &FTmainwin::bypass_clicked_events), pixbutt));
+					pixbutt->clicked.connect (sigc::bind (sigc::mem_fun(*this, &FTmainwin::bypass_clicked_events), pixbutt));
 					
 					buttsizer->Add (pixbutt, 0, 0, 0);
 					_bypassButtons[rowcnt][i]->SetFont(_buttFont);
@@ -3728,20 +3728,20 @@ void FTtitleMenu::OnSelectItem(wxCommandEvent &event)
 	if (id == ID_TitleRemove)
 	{
 		FTtitleMenuEvent tev (0, FTtitleMenuEvent::RemoveEvt, _parent);
-		_mwin->AddPendingEvent (tev);
+		_mwin->GetEventHandler()->AddPendingEvent (tev);
 		//_mwin->doRemoveRow(_parent);
 	}
 	else if (id == ID_TitleMinimize)
 	{
 		FTtitleMenuEvent tev (0, FTtitleMenuEvent::MinimizeEvt, _parent);
-		_mwin->AddPendingEvent (tev);
+		_mwin->GetEventHandler()->AddPendingEvent (tev);
 
 		//_mwin->doMinimizeExpand(_parent);		
 	}
 	else if (id == ID_TitleExpand)
 	{
 		FTtitleMenuEvent tev (0, FTtitleMenuEvent::ExpandEvt, _parent);
-		_mwin->AddPendingEvent (tev);
+		_mwin->GetEventHandler()->AddPendingEvent (tev);
 		
 		//_mwin->doMinimizeExpand(_parent);
 	}

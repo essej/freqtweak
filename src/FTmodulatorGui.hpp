@@ -36,8 +36,7 @@ class FTioSupport;
 class FTmodulatorI;
 class FTspectralEngine;
 
-class FTmodulatorGui
-	: public wxPanel, public SigC::Object
+class FTmodulatorGui : public wxPanel
 {
    public:
 	FTmodulatorGui(FTioSupport * iosup, FTmodulatorI * mod,
@@ -50,7 +49,7 @@ class FTmodulatorGui
 	virtual ~FTmodulatorGui();
 
 
-	SigC::Signal0<void> RemovalRequest;
+	sigc::signal0<void> RemovalRequest;
 	
    protected:
 

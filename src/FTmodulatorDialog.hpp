@@ -25,7 +25,6 @@
 #include <list>
 
 #include <wx/wx.h>
-#include <sigc++/object.h>
 
 #include "FTtypes.hpp"
 
@@ -34,7 +33,7 @@ class FTmainwin;
 class FTmodulatorI;
 class FTmodulatorGui;
 
-class FTmodulatorDialog : public wxFrame, public SigC::Object
+class FTmodulatorDialog : public wxFrame
 {
   public:
 	// ctor(s)
