@@ -1,0 +1,119 @@
+freqtweak -- History of visible changes.
+
+Copyright (C) 2002-2004, Jesse Chappell <jesse@essej.net>
+See the end for copying conditions.
+
+Please send freqtweak bug reports to freqtweak-user@lists.sourceforge.net
+
+Version 0.6.1 -- 7 July 2004
+ * various fixes to satisfy compilers
+ * modulator preset loading fixes
+ * jack tmpdir option fix
+
+Version 0.6.0 -- 23 April 2004
+ * added filter Modulators, Rotate, Rotate LFO,
+   Value LFO, and Randomize
+ * minor bugfixes
+
+Version 0.5.3
+ * reworked all string handling to be compatible with unicode
+   versions of wxGTK
+ * 64bit portability fixes
+ * added usage help
+
+Version 0.5.2
+ * fixed dialog closing problem, made them real windows
+ * fixed compile problems for gcc 2.96
+ * added Compressor module
+ * added EQ Boost module
+ * now supports FFTW3
+ * manpage contributed by Enrique Arnuncio
+
+Version 0.5.1
+ * fixed terrible preset loading bug (when fft size was other than default)
+
+Version 0.5.0
+ * arbitrarily selectable and reorderable modules
+ * preset blending feature
+ * two new modules: limiter and warp
+ * new preset format (conversion script included: ft_preset_convert.py)
+ * internal design cleanup
+
+Version 0.4.8
+ * fixed preset loading crashing
+ * no longer restores ports by default when loading presets,
+   made it an option.
+
+Version 0.4.7
+ * fixed tempo=0 bug
+ * new gcc and 64 bit fixes
+
+Version 0.4.6
+ * Many stability fixes
+ * Grid and grid snap options
+ * optional tempo based grid for delay time
+ * THIS time I did finally fix the FFT changing problems!
+ * Added adjustable max delay time levels (up to 20secs)
+ * Pitch now uses semitones as units
+ * Min/max legend text on plots. 
+
+
+Version 0.4.5
+ * This time, I think I might have licked the changing FFT sizes problem!
+
+ * now uses the alsa_pcm conventions from JACK 0.40 for default connections
+
+ * added disconnect (from JACK) button to IO tab
+
+
+Version 0.4.4
+ * Now deactivates processing while switching FFT sizes. This
+   should prevent JACK from kicking us out here.
+
+ * Added ability to reconnect to JACK with a different basename,
+   or just reconnect if we are kicked out.
+
+ * Control-Alt left mouse draws arbitrary straight lines between
+   initial click and current cursor.  Also smoothed regular drawing.
+
+ * More configure checks to ensure compiling against the float version
+   of FFTW.
+
+
+Version 0.4.3
+ * This time, I think the main configuration problem people were having
+   fixed.
+
+ * Fixed empty preset Load and Store bugs
+
+ * Added 4096 freq bin mode at Steve Harris' request.
+
+
+Version 0.4.2
+ * Didn't fix problem before... now it should be :)
+
+
+Version 0.4.1
+ * Fixed problem with wxWindows version inconsistencies related
+   to wxListBox
+
+Version 0.4
+
+* Initial release.
+
+
+-------------------------------------------------------
+Copying information:
+
+Copyright (C) 2002-2003, Jesse Chappell <jesse@essej.net>
+
+   Permission is granted to anyone to make or distribute verbatim copies
+   of this document as received, in any medium, provided that the
+   copyright notice and this permission notice are preserved,
+   thus giving the recipient permission to redistribute in turn.
+
+   Permission is granted to distribute modified versions
+   of this document, or of portions of it,
+   under the above conditions, provided also that they
+   carry prominent notices stating who last changed them.
+

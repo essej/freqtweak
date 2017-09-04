@@ -1,0 +1,277 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Features and Usage</title>
+  </head>
+
+  <body>
+    <h3>Features and Usage</h3>
+
+
+
+	  <table border=0 width="100%" cellpadding=6 cellspacing=0>
+		<tr bgcolor="#eeeeee">
+		  <td>
+	    
+
+
+	    FreqTweak supports manipulating the spectral filters at several frequency resolutions
+	    (64,128,256,512,1024,2048, or 4096 bands) depending on your
+	    needs/resources.   Overlap and windowing are also selectable.
+	    <p>
+	    The GUI filter graph manipulators (and analysis plots)
+	    have selectable frequency scale types: 1x and 2x linear, and two log
+	    scales to help with modulating the musical frequencies.
+	      Filters can be linked across multiple channels.
+	    The plots are resizable and  zoomable (y-axis) to allow precise 
+            editing of filter values.
+
+	    <p>
+	    The current processing filters are described below in the
+	    order audio is processed in the chain.  Any or all of the
+	    filters can be bypassed.  The state of all filters
+	      can be stored or loaded as presets.
+	    <p>
+	    <ul>
+	      <li> <b>Spectral Analysis</b> -- <font size=-1>
+		  Multicolor scrolling-raster spectrogram, or energy
+		  vs. freq line or bar plots... one shows
+		  pre-processed, another shows post-processed.
+		  </font>
+
+	      <li> <b>EQ Boost/Cut</b> -- <font size=-1>
+		  Your basic multi-band frequency attenuation.  But
+		  you get an unhealthy number of bands...  Note that this EQ is not intended for
+		  mastering purposes, it allows for (and doesn't protect against) highly irregular
+		  filtering.  Two versions, one does only frequency gain
+		  cut, the other boost.
+		  </font>
+		
+	      <li> <b>Pitch Scaling</b> -- <font size=-1>
+		  This is an interesting application
+		of Sprengler's pitch scaling algorithm (used in
+		Steve Harris' LADSPA <a
+					href="http://plugin.org.uk">plugin</a>).
+		If you keep all the bins at the same scale, it is
+		equivalent to Steve's plugin, but when you start
+		applying different scales per frequency bin, things
+		quickly get weird.  For highest quality results (at the expense of transients) use
+                larger FFT (&gt;= 1024 bins).
+		  </font>
+		
+	      <li> <b>Gate</b> -- <font size=-1>
+		  This is a double filter where
+		a given frequency band is allowed to pass through
+		(unaltered)
+		if the power on that band is between two dB
+		thresholds... otherwise its gain is clamped to 0.
+		</font>
+
+	      <li> <b>Delay</b> -- <font size=-1>
+		  This lets you delay the audio
+		on a per frequency-bin basis yielding some pretty wild
+		effects (or subtle, if you are careful).  A feedback
+		filter controls the feedback of the delay per bin (be
+		  careful with this one).
+		This is basically what Native Instrument's
+		<a
+		   href="http://www.nativeinstruments.de/index.php?id=444&type=1">
+		  Spektral-Delay</a> accomplishes.  Granted, I don't
+		have all the automated filter modulations (yet ;).
+		See their website for audio examples of what is
+		possible with this cool effect.
+
+		  </font>
+
+	      <li> <b>Limit</b> -- <font size=-1>
+		This is very harsh brick wall limiter on a per-bin
+		basis.  It is not very pleasant, but can be interesting.
+		</font>
+
+	      <li> <b>Compressor</b> -- <font size=-1>
+			  This is a massively multiband compressor.
+			  It will not behave quite like a normal
+			  time-domain compressor because of the
+			  inherent block processing of the FFT.  Each
+			  frequency bin has its own compressor
+			  complete with Threshold, Ratio,
+			  Attack/Release time, and makeup gain.
+			  This is *not* suitable for mastering applications!
+			</font>
+			
+	      <li> <b>Warp</b> -- <font size=-1>
+		  This one is a little different, both axes represent
+		  frequency, and the identity matrix is unaltered
+		  audio.  Changing the value (height) of a bin,
+		  reallocates the energy at that frequency to the new
+		  frequency bin represented by the height of the bar.
+		  For instance, if all bins are the same height, all
+		  the frequency energy is added to a single bin.  This
+		  is a sensitive filter, the Log frequency scale is helpful here
+		  (it affects both axes).
+		  </font>
+			
+
+		    </ul>
+
+
+
+	         </td>
+		</tr>  
+	    </table>
+
+<p>
+      
+  <table border=0 width="100%" cellpadding=6 cellspacing=0>
+		<tr bgcolor="#bbbbbb">
+		  <th align=left>
+		    Modulators
+		  </th>
+		</tr>
+		<tr bgcolor="#eeeeee">
+		  <td>
+	    	    
+
+
+	    <font size=-1>
+
+
+ Modulators to an filter can be attached from the Modulations Window
+ (Control->Modulators...   Ctrl-M).  Add a modulator by clicking
+ on the Add Modulator... button and select from the choices.  To
+ attach a modulator to a filter, click on the Attach... button on the
+ modulator panel and pick a filter.  You can modulate many filters
+ simultaneously.   The text entry fields can be used to exactly set
+ the slider values, by pressing enter/return after entering the number.
+<p>
+	      
+ The following modulators are
+ currently implemented, with more to come soon.
+
+	    <ul>
+	      <li> <b>Rotate</b> -- <font size=-1>
+
+		  This will continually shift a filter horizontally at a constant
+            definable Rate, wrapping when it reaches the edge.  The edges
+            are definable with the Min and Max Freq controls.
+
+		  </font>
+		
+	      
+	      <li> <b>Rotate LFO</b> -- <font size=-1>
+
+             The same as the above, except the shifting rate oscillates via LFO
+            with its own Rate and Depth controls.  Currently there are sine, triangle,
+	    and square waveform shapes.  The frequency range that the modulator affects
+            is definable with the Min and Max Freq controls.
+		  </font>
+
+	      <li> <b>Value LFO</b> -- <font size=-1>
+		  
+            Shifts the values up and down with an LFO.  The depth control
+            here is percentage
+            of total value range.  The frequency range that the modulator affects
+            is definable with the Min and Max Freq controls.
+		  </font>
+
+	      <li> <b>Randomize</b> -- <font size=-1>
+		  Randomizes the bin values between the given value bounds
+            (as percentages of total range).  Again, the frequency range
+            that the modulator affects is definable with the Min and Max Freq controls.
+            
+		  </font>
+
+
+		    </ul>
+
+
+
+	         </td>
+		</tr>  
+	    </table>
+
+    
+<p>
+	  <table border=0 width="100%" cellpadding=6 cellspacing=0>
+		<tr bgcolor="#bbbbbb">
+		  <th align=left>
+		    Mouse Control
+		  </th>
+		</tr>
+		<tr bgcolor="#eeeeee">
+		  <td>
+	    	    
+
+
+	    <font size=-1>
+	    <ul>
+	      <li> Left button click/drag to draw filters.  If Control
+		is down, the y-axis is fixed at the last cursor
+		location (to draw nice horizontal lines).
+	        If Control <i>and</I> Alt are down you can draw nice
+	      arbitrary straight lines.
+
+	      <li> Right button drag to move filters around in
+		space.  The filters
+		wrap around the left/right edges unless you hold down
+		Control.  Dragging with both left and right buttons
+		down moves both primary and alternate together (on Gate).
+
+	      <li> Holding Shift modifies the alternate filter (on
+		double filter graphs like Gate) for the previous
+		operations.  
+		
+	      <li> Middle-button pops up frequency axis menu.
+
+	      <li> Ctrl-Alt right-click resets a filter to default
+		values.
+
+	      <li> Shift-Ctrl-Alt Left-Drag zooms in on the y axis.
+	      Look at the status bar to see the values for the cursor
+	      itself and the values of the filter at the cursor's
+	      frequency.  Shift-Ctrl-Alt Right click-release resets
+	      the Y-zoom to full.  
+	      
+	      
+		<li> The B and BA buttons mean Bypass and Bypass All
+		respectively.
+		<li> The L and LA buttons mean Link and Link All
+		respectively.
+		<li> The G and GS buttons mean Toggle Grid and Toggle
+	        Grid Snap respectively.  The right button can be used on
+			the Grid buttons to choose the grid resolution.
+
+		    </ul>
+		  </font>
+		  </td>
+		</tr>  
+	    </table>
+
+<p>
+	  <table border=0 width="100%" cellpadding=6 cellspacing=0>
+		<tr bgcolor="#bbbbbb">
+		  <th align=left>
+		    Tips
+		  </th>
+		</tr>
+		<tr bgcolor="#eeeeee">
+		  <td>
+		    <font size=-1>
+	    Here is an example of using freqtweak with an alsaplayer feeding it
+	      and output going to speakers (alsa_pcm:out_?) without using a JACK patchbay:
+	      <br>
+	      Start freqtweak first with this command line: <p>
+              &nbsp;&nbsp;freqtweak -n ft  &amp; 
+		<p>
+             Then start alsaplayer like so: <p>
+
+                   &nbsp;&nbsp; alsaplayer -o jack -d ft:in_1,ft:in_2  &amp; 
+                  
+	      </font>
+		  </td>
+		</tr>  
+	    </table>
+
+    
+  </body>
+</html>

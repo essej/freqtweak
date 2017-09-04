@@ -1,0 +1,1554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 39;
+	objects = {
+		889C001508BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = cycles.h;
+			path = ../../../src/cycles.h;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C001608BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTactiveBarGraph.hpp;
+			path = ../../../src/FTactiveBarGraph.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C001708BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTapp.hpp;
+			path = ../../../src/FTapp.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C001808BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTconfigManager.hpp;
+			path = ../../../src/FTconfigManager.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C001908BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTdspManager.hpp;
+			path = ../../../src/FTdspManager.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C001A08BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FThelpWindow.hpp;
+			path = ../../../src/FThelpWindow.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C001B08BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTioSupport.hpp;
+			path = ../../../src/FTioSupport.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C001C08BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTjackSupport.hpp;
+			path = ../../../src/FTjackSupport.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C001D08BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTmainwin.hpp;
+			path = ../../../src/FTmainwin.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C001E08BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTmodRandomize.hpp;
+			path = ../../../src/FTmodRandomize.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C001F08BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTmodRotate.hpp;
+			path = ../../../src/FTmodRotate.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C002008BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTmodRotateLFO.hpp;
+			path = ../../../src/FTmodRotateLFO.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C002108BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTmodulatorDialog.hpp;
+			path = ../../../src/FTmodulatorDialog.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C002208BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTmodulatorGui.hpp;
+			path = ../../../src/FTmodulatorGui.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C002308BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTmodulatorI.hpp;
+			path = ../../../src/FTmodulatorI.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C002408BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTmodulatorManager.hpp;
+			path = ../../../src/FTmodulatorManager.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C002508BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTmodValueLFO.hpp;
+			path = ../../../src/FTmodValueLFO.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C002608BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTportSelectionDialog.hpp;
+			path = ../../../src/FTportSelectionDialog.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C002708BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTpresetBlendDialog.hpp;
+			path = ../../../src/FTpresetBlendDialog.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C002808BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTpresetBlender.hpp;
+			path = ../../../src/FTpresetBlender.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C002908BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTprocBoost.hpp;
+			path = ../../../src/FTprocBoost.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C002A08BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTprocCompressor.hpp;
+			path = ../../../src/FTprocCompressor.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C002B08BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTprocDelay.hpp;
+			path = ../../../src/FTprocDelay.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C002C08BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTprocEQ.hpp;
+			path = ../../../src/FTprocEQ.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C002D08BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTprocessPath.hpp;
+			path = ../../../src/FTprocessPath.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C002E08BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTprocGate.hpp;
+			path = ../../../src/FTprocGate.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C002F08BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTprocI.hpp;
+			path = ../../../src/FTprocI.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C003008BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTprocLimit.hpp;
+			path = ../../../src/FTprocLimit.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C003108BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTprocOrderDialog.hpp;
+			path = ../../../src/FTprocOrderDialog.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C003208BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTprocPitch.hpp;
+			path = ../../../src/FTprocPitch.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C003308BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTprocWarp.hpp;
+			path = ../../../src/FTprocWarp.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C003408BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTspectragram.hpp;
+			path = ../../../src/FTspectragram.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C003508BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTspectralEngine.hpp;
+			path = ../../../src/FTspectralEngine.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C003608BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTspectrumModifier.hpp;
+			path = ../../../src/FTspectrumModifier.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C003708BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTtypes.hpp;
+			path = ../../../src/FTtypes.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C003808BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTupdateToken.hpp;
+			path = ../../../src/FTupdateToken.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C003908BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = FTutils.hpp;
+			path = ../../../src/FTutils.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C003A08BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = LockMonitor.hpp;
+			path = ../../../src/LockMonitor.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C003B08BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = pix_button.hpp;
+			path = ../../../src/pix_button.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C003C08BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = pixmap_includes.hpp;
+			path = ../../../src/pixmap_includes.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C003D08BC192300FBF340 = {
+			includeInIndex = 1;
+			isa = PBXFileReference;
+			lastKnownFileType = folder;
+			name = pixmaps;
+			path = ../../../src/pixmaps;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C006408BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = RingBuffer.hpp;
+			path = ../../../src/RingBuffer.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C006508BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = slider_bar.hpp;
+			path = ../../../src/slider_bar.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C006608BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = spin_box.hpp;
+			path = ../../../src/spin_box.hpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C006708BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = version.h;
+			path = ../../../src/version.h;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889C006808BC192300FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.h;
+			name = "xml++.hpp";
+			path = "../../../src/xml++.hpp";
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFE6008BC074500FBF340 = {
+			children = (
+				88AE8AE208C90FB200D51A3D,
+				889CFE8508BC083A00FBF340,
+				889CFE7408BC07B000FBF340,
+				889CFE7608BC07B000FBF340,
+				88AE909208C9100300D51A3D,
+			);
+			isa = PBXGroup;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		889CFE6208BC074500FBF340 = {
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			isa = PBXBuildStyle;
+			name = Development;
+		};
+		889CFE6308BC074500FBF340 = {
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			isa = PBXBuildStyle;
+			name = Deployment;
+		};
+		889CFE6408BC074500FBF340 = {
+			buildSettings = {
+			};
+			buildStyles = (
+				889CFE6208BC074500FBF340,
+				889CFE6308BC074500FBF340,
+			);
+			hasScannedForEncodings = 0;
+			isa = PBXProject;
+			mainGroup = 889CFE6008BC074500FBF340;
+			productRefGroup = 889CFE7408BC07B000FBF340;
+			projectDirPath = "";
+			targets = (
+				889CFE7208BC07B000FBF340,
+			);
+		};
+		889CFE6F08BC07B000FBF340 = {
+			buildActionMask = 2147483647;
+			files = (
+				88AE909308C9100300D51A3D,
+			);
+			isa = PBXResourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		889CFE7008BC07B000FBF340 = {
+			buildActionMask = 2147483647;
+			files = (
+				889CFF0308BC08DC00FBF340,
+				889CFF0508BC08DC00FBF340,
+				889CFF0708BC08DC00FBF340,
+				889CFF0908BC08DC00FBF340,
+				889CFF0B08BC08DC00FBF340,
+				889CFF0D08BC08DC00FBF340,
+				889CFF0F08BC08DC00FBF340,
+				889CFF1208BC08DC00FBF340,
+				889CFF1408BC08DC00FBF340,
+				889CFF1608BC08DC00FBF340,
+				889CFF1808BC08DC00FBF340,
+				889CFF1A08BC08DC00FBF340,
+				889CFF1C08BC08DC00FBF340,
+				889CFF1E08BC08DC00FBF340,
+				889CFF2008BC08DC00FBF340,
+				889CFF2208BC08DC00FBF340,
+				889CFF2408BC08DC00FBF340,
+				889CFF2608BC08DC00FBF340,
+				889CFF2808BC08DC00FBF340,
+				889CFF2A08BC08DC00FBF340,
+				889CFF2C08BC08DC00FBF340,
+				889CFF2E08BC08DC00FBF340,
+				889CFF3008BC08DC00FBF340,
+				889CFF3208BC08DC00FBF340,
+				889CFF3408BC08DC00FBF340,
+				889CFF3608BC08DC00FBF340,
+				889CFF3808BC08DC00FBF340,
+				889CFF3A08BC08DC00FBF340,
+				889CFF3C08BC08DC00FBF340,
+				889CFF3E08BC08DC00FBF340,
+				889CFF4008BC08DC00FBF340,
+				889CFF4208BC08DC00FBF340,
+				889CFF4408BC08DC00FBF340,
+				889CFF4808BC08DC00FBF340,
+				889CFF4B08BC08DC00FBF340,
+				889CFF7208BC08DC00FBF340,
+				889CFF7408BC08DC00FBF340,
+				889CFF7608BC08DC00FBF340,
+				889CFF7908BC08DC00FBF340,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		889CFE7108BC07B000FBF340 = {
+			buildActionMask = 2147483647;
+			files = (
+				889CFE7D08BC081700FBF340,
+				889CFE7E08BC081700FBF340,
+				889CFE7F08BC081700FBF340,
+				889CFE8008BC081700FBF340,
+				889CFF8608BC0A0C00FBF340,
+				889CFF8708BC0A0C00FBF340,
+				889CFF8808BC0A0C00FBF340,
+				889CFF8E08BC0A3E00FBF340,
+				889CFF8F08BC0A3E00FBF340,
+				889CFF9008BC0A3E00FBF340,
+				889CFF9E08BC0ABA00FBF340,
+				889CFFD008BC0E9D00FBF340,
+				889CFFD108BC0E9D00FBF340,
+				889CFFD308BC0ECD00FBF340,
+				889CFFF408BC119A00FBF340,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		889CFE7208BC07B000FBF340 = {
+			buildPhases = (
+				889CFE6F08BC07B000FBF340,
+				889CFE7008BC07B000FBF340,
+				889CFE7108BC07B000FBF340,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				HEADER_SEARCH_PATHS = "/Users/jesse/wx/wx261/build-release/lib/wx/include/mac-ansi-release-static-2.6 /Users/jesse/wx/wx261/include /Users/jesse/wx/wx261/contrib/include /opt/local/include /usr/local/include/sigc++-1.2 /usr/local/lib/sigc++-1.2/include /opt/local/include/libxml2 /usr/local/include";
+				INFOPLIST_FILE = "FreqTweak-Info.plist";
+				INSTALL_PATH = "$(USER_APPS_DIR)";
+				LIBRARY_SEARCH_PATHS = "/Users/jesse/wx/wx261/build-release/lib /usr/local/lib /opt/local/lib";
+				OTHER_CFLAGS = "-D__WXMAC__ -D_FILE_OFFSET_BITS=64 -D_LARGE_FILES -DNO_GCC_PRAGMA  -DHAVE_STRCASECMP_IN_STRING_H -DUSING_FFTW3";
+				OTHER_LDFLAGS = "-framework Carbon -lpthread -liconv -lz";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = FreqTweak;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+			};
+			dependencies = (
+			);
+			isa = PBXNativeTarget;
+			name = FreqTweak;
+			productName = FreqTweak;
+			productReference = 889CFE7308BC07B000FBF340;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>FreqTweak</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.yourcompany.FreqTweak</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+</dict>
+</plist>
+";
+			productType = "com.apple.product-type.application";
+		};
+		889CFE7308BC07B000FBF340 = {
+			explicitFileType = wrapper.application;
+			includeInIndex = 0;
+			isa = PBXFileReference;
+			path = FreqTweak.app;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFE7408BC07B000FBF340 = {
+			children = (
+				889CFE7308BC07B000FBF340,
+			);
+			isa = PBXGroup;
+			name = Products;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		889CFE7608BC07B000FBF340 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.xml;
+			path = "FreqTweak-Info.plist";
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		889CFE7908BC081700FBF340 = {
+			isa = PBXFileReference;
+			lastKnownFileType = archive.ar;
+			name = "libwx_mac-2.6.a";
+			path = "/Users/jesse/wx/wx261/build-release/lib/libwx_mac-2.6.a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		889CFE7A08BC081700FBF340 = {
+			isa = PBXFileReference;
+			lastKnownFileType = archive.ar;
+			name = "libwxjpeg-2.6.a";
+			path = "/Users/jesse/wx/wx261/build-release/lib/libwxjpeg-2.6.a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		889CFE7B08BC081700FBF340 = {
+			isa = PBXFileReference;
+			lastKnownFileType = archive.ar;
+			name = "libwxpng-2.6.a";
+			path = "/Users/jesse/wx/wx261/build-release/lib/libwxpng-2.6.a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		889CFE7C08BC081700FBF340 = {
+			isa = PBXFileReference;
+			lastKnownFileType = archive.ar;
+			name = "libwxtiff-2.6.a";
+			path = "/Users/jesse/wx/wx261/build-release/lib/libwxtiff-2.6.a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		889CFE7D08BC081700FBF340 = {
+			fileRef = 889CFE7908BC081700FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFE7E08BC081700FBF340 = {
+			fileRef = 889CFE7A08BC081700FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFE7F08BC081700FBF340 = {
+			fileRef = 889CFE7B08BC081700FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFE8008BC081700FBF340 = {
+			fileRef = 889CFE7C08BC081700FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFE8508BC083A00FBF340 = {
+			children = (
+				889C001508BC192300FBF340,
+				889C001608BC192300FBF340,
+				889C001708BC192300FBF340,
+				889C001808BC192300FBF340,
+				889C001908BC192300FBF340,
+				889C001A08BC192300FBF340,
+				889C001B08BC192300FBF340,
+				889C001C08BC192300FBF340,
+				889C001D08BC192300FBF340,
+				889C001E08BC192300FBF340,
+				889C001F08BC192300FBF340,
+				889C002008BC192300FBF340,
+				889C002108BC192300FBF340,
+				889C002208BC192300FBF340,
+				889C002308BC192300FBF340,
+				889C002408BC192300FBF340,
+				889C002508BC192300FBF340,
+				889C002608BC192300FBF340,
+				889C002708BC192300FBF340,
+				889C002808BC192300FBF340,
+				889C002908BC192300FBF340,
+				889C002A08BC192300FBF340,
+				889C002B08BC192300FBF340,
+				889C002C08BC192300FBF340,
+				889C002D08BC192300FBF340,
+				889C002E08BC192300FBF340,
+				889C002F08BC192300FBF340,
+				889C003008BC192300FBF340,
+				889C003108BC192300FBF340,
+				889C003208BC192300FBF340,
+				889C003308BC192300FBF340,
+				889C003408BC192300FBF340,
+				889C003508BC192300FBF340,
+				889C003608BC192300FBF340,
+				889C003708BC192300FBF340,
+				889C003808BC192300FBF340,
+				889C003908BC192300FBF340,
+				889C003A08BC192300FBF340,
+				889C003B08BC192300FBF340,
+				889C003C08BC192300FBF340,
+				889C003D08BC192300FBF340,
+				889C006408BC192300FBF340,
+				889C006508BC192300FBF340,
+				889C006608BC192300FBF340,
+				889C006708BC192300FBF340,
+				889C006808BC192300FBF340,
+				889CFE8908BC08DC00FBF340,
+				889CFE8B08BC08DC00FBF340,
+				889CFE8D08BC08DC00FBF340,
+				889CFE8F08BC08DC00FBF340,
+				889CFE9108BC08DC00FBF340,
+				889CFE9308BC08DC00FBF340,
+				889CFE9508BC08DC00FBF340,
+				889CFE9808BC08DC00FBF340,
+				889CFE9A08BC08DC00FBF340,
+				889CFE9C08BC08DC00FBF340,
+				889CFE9E08BC08DC00FBF340,
+				889CFEA008BC08DC00FBF340,
+				889CFEA208BC08DC00FBF340,
+				889CFEA408BC08DC00FBF340,
+				889CFEA608BC08DC00FBF340,
+				889CFEA808BC08DC00FBF340,
+				889CFEAA08BC08DC00FBF340,
+				889CFEAC08BC08DC00FBF340,
+				889CFEAE08BC08DC00FBF340,
+				889CFEB008BC08DC00FBF340,
+				889CFEB208BC08DC00FBF340,
+				889CFEB408BC08DC00FBF340,
+				889CFEB608BC08DC00FBF340,
+				889CFEB808BC08DC00FBF340,
+				889CFEBA08BC08DC00FBF340,
+				889CFEBC08BC08DC00FBF340,
+				889CFEBE08BC08DC00FBF340,
+				889CFEC008BC08DC00FBF340,
+				889CFEC208BC08DC00FBF340,
+				889CFEC408BC08DC00FBF340,
+				889CFEC608BC08DC00FBF340,
+				889CFEC808BC08DC00FBF340,
+				889CFECA08BC08DC00FBF340,
+				889CFECE08BC08DC00FBF340,
+				889CFED108BC08DC00FBF340,
+				889CFED408BC08DC00FBF340,
+				889CFEF908BC08DC00FBF340,
+				889CFEFB08BC08DC00FBF340,
+				889CFEFD08BC08DC00FBF340,
+				889CFF0008BC08DC00FBF340,
+			);
+			indentWidth = 8;
+			isa = PBXGroup;
+			name = src;
+			refType = 4;
+			sourceTree = "<group>";
+			tabWidth = 8;
+		};
+		889CFE8908BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FTactiveBarGraph.cpp;
+			path = ../../../src/FTactiveBarGraph.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFE8B08BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FTapp.cpp;
+			path = ../../../src/FTapp.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFE8D08BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FTconfigManager.cpp;
+			path = ../../../src/FTconfigManager.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFE8F08BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FTdspManager.cpp;
+			path = ../../../src/FTdspManager.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFE9108BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FThelpWindow.cpp;
+			path = ../../../src/FThelpWindow.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFE9308BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FTioSupport.cpp;
+			path = ../../../src/FTioSupport.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFE9508BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FTjackSupport.cpp;
+			path = ../../../src/FTjackSupport.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFE9808BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FTmainwin.cpp;
+			path = ../../../src/FTmainwin.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFE9A08BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FTmodRandomize.cpp;
+			path = ../../../src/FTmodRandomize.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFE9C08BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FTmodRotate.cpp;
+			path = ../../../src/FTmodRotate.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFE9E08BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FTmodRotateLFO.cpp;
+			path = ../../../src/FTmodRotateLFO.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFEA008BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FTmodulatorDialog.cpp;
+			path = ../../../src/FTmodulatorDialog.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFEA208BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FTmodulatorGui.cpp;
+			path = ../../../src/FTmodulatorGui.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFEA408BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FTmodulatorI.cpp;
+			path = ../../../src/FTmodulatorI.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFEA608BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FTmodulatorManager.cpp;
+			path = ../../../src/FTmodulatorManager.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFEA808BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FTmodValueLFO.cpp;
+			path = ../../../src/FTmodValueLFO.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFEAA08BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FTportSelectionDialog.cpp;
+			path = ../../../src/FTportSelectionDialog.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFEAC08BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FTpresetBlendDialog.cpp;
+			path = ../../../src/FTpresetBlendDialog.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFEAE08BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FTpresetBlender.cpp;
+			path = ../../../src/FTpresetBlender.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFEB008BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FTprocBoost.cpp;
+			path = ../../../src/FTprocBoost.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFEB208BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FTprocCompressor.cpp;
+			path = ../../../src/FTprocCompressor.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFEB408BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FTprocDelay.cpp;
+			path = ../../../src/FTprocDelay.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFEB608BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FTprocEQ.cpp;
+			path = ../../../src/FTprocEQ.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFEB808BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FTprocessPath.cpp;
+			path = ../../../src/FTprocessPath.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFEBA08BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FTprocGate.cpp;
+			path = ../../../src/FTprocGate.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFEBC08BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FTprocI.cpp;
+			path = ../../../src/FTprocI.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFEBE08BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FTprocLimit.cpp;
+			path = ../../../src/FTprocLimit.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFEC008BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FTprocOrderDialog.cpp;
+			path = ../../../src/FTprocOrderDialog.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFEC208BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FTprocPitch.cpp;
+			path = ../../../src/FTprocPitch.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFEC408BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FTprocWarp.cpp;
+			path = ../../../src/FTprocWarp.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFEC608BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FTspectragram.cpp;
+			path = ../../../src/FTspectragram.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFEC808BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FTspectralEngine.cpp;
+			path = ../../../src/FTspectralEngine.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFECA08BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FTspectrumModifier.cpp;
+			path = ../../../src/FTspectrumModifier.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFECE08BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = FTutils.cpp;
+			path = ../../../src/FTutils.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFED108BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = pix_button.cpp;
+			path = ../../../src/pix_button.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFED408BC08DC00FBF340 = {
+			children = (
+			);
+			isa = PBXGroup;
+			name = pixmaps;
+			path = ../../../src/pixmaps;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFEF908BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = RingBuffer.cpp;
+			path = ../../../src/RingBuffer.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFEFB08BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = slider_bar.cpp;
+			path = ../../../src/slider_bar.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFEFD08BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = spin_box.cpp;
+			path = ../../../src/spin_box.cpp;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFF0008BC08DC00FBF340 = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = "xml++.cpp";
+			path = "../../../src/xml++.cpp";
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		889CFF0308BC08DC00FBF340 = {
+			fileRef = 889CFE8908BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF0508BC08DC00FBF340 = {
+			fileRef = 889CFE8B08BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF0708BC08DC00FBF340 = {
+			fileRef = 889CFE8D08BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF0908BC08DC00FBF340 = {
+			fileRef = 889CFE8F08BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF0B08BC08DC00FBF340 = {
+			fileRef = 889CFE9108BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF0D08BC08DC00FBF340 = {
+			fileRef = 889CFE9308BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF0F08BC08DC00FBF340 = {
+			fileRef = 889CFE9508BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF1208BC08DC00FBF340 = {
+			fileRef = 889CFE9808BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF1408BC08DC00FBF340 = {
+			fileRef = 889CFE9A08BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF1608BC08DC00FBF340 = {
+			fileRef = 889CFE9C08BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF1808BC08DC00FBF340 = {
+			fileRef = 889CFE9E08BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF1A08BC08DC00FBF340 = {
+			fileRef = 889CFEA008BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF1C08BC08DC00FBF340 = {
+			fileRef = 889CFEA208BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF1E08BC08DC00FBF340 = {
+			fileRef = 889CFEA408BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF2008BC08DC00FBF340 = {
+			fileRef = 889CFEA608BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF2208BC08DC00FBF340 = {
+			fileRef = 889CFEA808BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF2408BC08DC00FBF340 = {
+			fileRef = 889CFEAA08BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF2608BC08DC00FBF340 = {
+			fileRef = 889CFEAC08BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF2808BC08DC00FBF340 = {
+			fileRef = 889CFEAE08BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF2A08BC08DC00FBF340 = {
+			fileRef = 889CFEB008BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF2C08BC08DC00FBF340 = {
+			fileRef = 889CFEB208BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF2E08BC08DC00FBF340 = {
+			fileRef = 889CFEB408BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF3008BC08DC00FBF340 = {
+			fileRef = 889CFEB608BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF3208BC08DC00FBF340 = {
+			fileRef = 889CFEB808BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF3408BC08DC00FBF340 = {
+			fileRef = 889CFEBA08BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF3608BC08DC00FBF340 = {
+			fileRef = 889CFEBC08BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF3808BC08DC00FBF340 = {
+			fileRef = 889CFEBE08BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF3A08BC08DC00FBF340 = {
+			fileRef = 889CFEC008BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF3C08BC08DC00FBF340 = {
+			fileRef = 889CFEC208BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF3E08BC08DC00FBF340 = {
+			fileRef = 889CFEC408BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF4008BC08DC00FBF340 = {
+			fileRef = 889CFEC608BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF4208BC08DC00FBF340 = {
+			fileRef = 889CFEC808BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF4408BC08DC00FBF340 = {
+			fileRef = 889CFECA08BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF4808BC08DC00FBF340 = {
+			fileRef = 889CFECE08BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF4B08BC08DC00FBF340 = {
+			fileRef = 889CFED108BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF7208BC08DC00FBF340 = {
+			fileRef = 889CFEF908BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF7408BC08DC00FBF340 = {
+			fileRef = 889CFEFB08BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF7608BC08DC00FBF340 = {
+			fileRef = 889CFEFD08BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF7908BC08DC00FBF340 = {
+			fileRef = 889CFF0008BC08DC00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF8308BC0A0C00FBF340 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = Carbon.framework;
+			path = /System/Library/Frameworks/Carbon.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		889CFF8408BC0A0C00FBF340 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = IOKit.framework;
+			path = /System/Library/Frameworks/IOKit.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		889CFF8508BC0A0C00FBF340 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = System.framework;
+			path = /System/Library/Frameworks/System.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		889CFF8608BC0A0C00FBF340 = {
+			fileRef = 889CFF8308BC0A0C00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF8708BC0A0C00FBF340 = {
+			fileRef = 889CFF8408BC0A0C00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF8808BC0A0C00FBF340 = {
+			fileRef = 889CFF8508BC0A0C00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF8B08BC0A3E00FBF340 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = Cocoa.framework;
+			path = /System/Library/Frameworks/Cocoa.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		889CFF8C08BC0A3E00FBF340 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = QuickTime.framework;
+			path = /System/Library/Frameworks/QuickTime.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		889CFF8D08BC0A3E00FBF340 = {
+			isa = PBXFileReference;
+			lastKnownFileType = wrapper.framework;
+			name = WebKit.framework;
+			path = /System/Library/Frameworks/WebKit.framework;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		889CFF8E08BC0A3E00FBF340 = {
+			fileRef = 889CFF8B08BC0A3E00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF8F08BC0A3E00FBF340 = {
+			fileRef = 889CFF8C08BC0A3E00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF9008BC0A3E00FBF340 = {
+			fileRef = 889CFF8D08BC0A3E00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFF9D08BC0ABA00FBF340 = {
+			isa = PBXFileReference;
+			lastKnownFileType = archive.ar;
+			name = "libwxexpat-2.6.a";
+			path = "/Users/jesse/wx/wx261/build-release/lib/libwxexpat-2.6.a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		889CFF9E08BC0ABA00FBF340 = {
+			fileRef = 889CFF9D08BC0ABA00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFFCE08BC0E9D00FBF340 = {
+			isa = PBXFileReference;
+			lastKnownFileType = "compiled.mach-o.dylib";
+			name = libjack.dylib;
+			path = /usr/local/lib/libjack.0.dylib;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		889CFFCF08BC0E9D00FBF340 = {
+			isa = PBXFileReference;
+			lastKnownFileType = archive.ar;
+			name = "libsigc-1.2.a";
+			path = "/usr/local/lib/libsigc-1.2.a";
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		889CFFD008BC0E9D00FBF340 = {
+			fileRef = 889CFFCE08BC0E9D00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFFD108BC0E9D00FBF340 = {
+			fileRef = 889CFFCF08BC0E9D00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFFD208BC0ECD00FBF340 = {
+			isa = PBXFileReference;
+			lastKnownFileType = archive.ar;
+			name = libxml2_s.a;
+			path = /opt/local/lib/libxml2.a;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		889CFFD308BC0ECD00FBF340 = {
+			fileRef = 889CFFD208BC0ECD00FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		889CFFF308BC119900FBF340 = {
+			isa = PBXFileReference;
+			lastKnownFileType = archive.ar;
+			name = libfftw3f.a;
+			path = /opt/local/lib/libfftw3f.a;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		889CFFF408BC119A00FBF340 = {
+			fileRef = 889CFFF308BC119900FBF340;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		88AE8AE208C90FB200D51A3D = {
+			children = (
+				889CFE7908BC081700FBF340,
+				889CFFD208BC0ECD00FBF340,
+				889CFFCE08BC0E9D00FBF340,
+				889CFFCF08BC0E9D00FBF340,
+				889CFFF308BC119900FBF340,
+				889CFF9D08BC0ABA00FBF340,
+				889CFE7A08BC081700FBF340,
+				889CFE7B08BC081700FBF340,
+				889CFE7C08BC081700FBF340,
+				889CFF8B08BC0A3E00FBF340,
+				889CFF8C08BC0A3E00FBF340,
+				889CFF8D08BC0A3E00FBF340,
+				889CFF8308BC0A0C00FBF340,
+				889CFF8408BC0A0C00FBF340,
+				889CFF8508BC0A0C00FBF340,
+			);
+			isa = PBXGroup;
+			name = libs;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		88AE909208C9100300D51A3D = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.icns;
+			name = fticon.icns;
+			path = /Users/jesse/src/freqtweak/doc/fticon.icns;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		88AE909308C9100300D51A3D = {
+			fileRef = 88AE909208C9100300D51A3D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+	};
+	rootObject = 889CFE6408BC074500FBF340;
+}

@@ -1,0 +1,165 @@
+.\"                                      Hey, EMACS: -*- nroff -*-
+.\" First parameter, NAME, should be all caps
+.\" Second parameter, SECTION, should be 1-8, maybe w/ subsection
+.\" other parameters are allowed: see man(7), man(1)
+.TH FREQTWEAK 1 "February 11, 2003"
+.\" Please adjust this date whenever revising the manpage.
+.\"
+.\" Some roff macros, for reference:
+.\" .nh        disable hyphenation
+.\" .hy        enable hyphenation
+.\" .ad l      left justify
+.\" .ad b      justify to both left and right margins
+.\" .nf        disable filling
+.\" .fi        enable filling
+.\" .br        insert line break
+.\" .sp <n>    insert n+1 empty lines
+.\" for manpage-specific macros, see man(7)
+.SH NAME
+freqtweak \- Realtime audio frequency spectral manipulation
+.SH SYNOPSIS
+.br
+.B freqtweak
+.RI [-h] 
+[
+.B -c
+.I <num>
+]
+[
+.B -i
+.I <str>
+]
+[
+.B -o
+.I <str>
+]
+[
+.B -n 
+.I <str>
+]
+[
+.B -D
+.I <str>
+]
+[
+.B -p
+.I <str>
+]
+[
+.B -r
+.I <str>
+]
+.br
+.SH DESCRIPTION
+.\" TeX users may be more comfortable with the \fB<whatever>\fP and
+.\" \fI<whatever>\fP escape sequences to invode bold face and italics, 
+.\" respectively.
+\fBfreqtweak\fP is a graphical tool for realtime audio spectral
+manipulation and display. It provides several algorithms for
+processing audio data in the frequency domain and a highly interactive
+GUI to manipulate each associated filter. It also provides
+high-resolution spectral displays in the form of scrolling-raster
+spectrograms and energy vs frequency plots displaying both pre and
+post-processed spectra.
+.SH MOUSE CONTROL
+.P
+The processing filters are controlled through mouse operations on each
+filter GUI window. The possible operations are:
+.P
+.I Left button click/drag
+to draw filters. If Control is down, the y-axis is fixed at the last
+cursor location (to draw nice horizontal lines).  If Control and Alt
+are down you can draw nice arbitrary straight lines.
+
+.I Right button drag
+to move filters around in space.  The filters wrap around the
+left/right edges unless you hold down Control.  Dragging with both
+left and right buttons down on the GUI for the Gate processor moves
+both the primary and the alternate filter together.
+
+.I Holding Shift
+modifies the alternate filter (on double filter graphs like Gate) for
+the previous operations.
+
+.I Middle-button
+pops up frequency axis menu.
+
+.I Ctrl-Alt right-click
+resets a filter to default values.
+
+.I Shift-Ctrl-Alt left-drag 
+zooms in on the y axis.  Look at the status bar to see the values for
+the cursor itself and the values of the filter at the cursor's
+frequency.
+
+.I Shift-Ctrl-Alt right-click
+release resets the Y-zoom to full.
+
+The
+.I B and BA buttons
+mean Bypass and Bypass All respectively.
+
+The
+.I L and LA buttons
+mean Link and Link All respectively.
+
+The
+.I G and GS buttons
+mean Toggle Grid and Toggle Grid Snap respectively.
+.SH OPTIONS
+This program follows the usual GNU command line syntax, with long
+options starting with two dashes (`-').
+A summary of options is included below.
+.TP
+.B \-h, \-\-help
+Show summary of options.
+.TP
+.B \-c <num>, \-\-channels=<num>
+Processing channels (1-4). Default is 2.
+.TP
+.B \-i <str>, \-\-inputs=<str>
+Connect inputs from these jack ports (separate each channel with commas).
+Defaults to 'alsa_pcm:capture_1,...'
+.TP
+.B \-o <str>, \-\-outputs=<str>
+Connect outputs to these jack ports (separate each channel with commas).
+Defaults to 'alsa_pcm:playback_1,...'
+.TP
+.B \-n <str>, \-\-jack-name=<str>
+Jack name. Default is freqtweak_1.
+.TP
+.B \-D <str>, \-\-tmpdir=<str>
+Jack server tmp directory (should match jackd --tmpdir).
+.TP
+.B \-p <str>, \-\-preset=<str>
+Load the given preset initially.
+.TP
+.B \-r <str>, \-\-rc-dir=<str>
+Specifies what directory to use for run-control state. Default is ~/.freqtweak.
+
+.SH EXAMPLES
+
+Here is an example of using freqtweak with an alsaplayer feeding it
+and output going to speakers (alsa_pcm:out_?) without using a JACK
+patchbay:
+
+Start freqtweak first with this command line:
+
+.T
+.B freqtweak -n ft &
+
+Then start alsaplayer like so: 
+
+.B alsaplayer -o jack -d ft:in_1,ft:in_2 &
+
+
+.SH SEE ALSO
+.BR jackd (1),
+.BR jack_connect (1),
+.BR jack_lsp (1)
+.SH AUTHOR
+Freqtweak was written and is maintained by Jesse Chappell <jesse@essej.net>.
+.P
+This manual page was created by Enrique Robledo Arnuncio
+<era@debian.org> for the Debian GNU/Linux system, using text from
+the README file by Jesse Chappell.

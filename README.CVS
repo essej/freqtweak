@@ -1,0 +1,6 @@
+To build this from CVS: 
+ ./autogen.sh
+ ./configure
+ make
+
+

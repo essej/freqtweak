@@ -1,0 +1,6 @@
+#ifndef __freqtweak_version_h__
+#define __freqtweak_version_h__
+
+static const char *freqtweak_version  = "@FREQTWEAK_VERSION@";
+
+#endif // __freqtweak_version_h__
