@@ -107,8 +107,8 @@ void FTmodRandomize::modulate (nframes_t current_frame, fft_data * fftdata, unsi
 		return;
 	
 	unsigned int minbin, maxbin;
-	float minval, maxval;
-	float minfreq,maxfreq;
+	float minval = 0.0, maxval = 0.0;
+	float minfreq = 0.0, maxfreq = 0.0;
 	
 	double samps = _sampleRate / rate;
 

@@ -1,5 +1,5 @@
 /* XPM */
-static char * link_focus_xpm[] = {
+static const char * link_focus_xpm[] = {
 "20 20 70 1",
 " 	c None",
 ".	c #5A80AA",

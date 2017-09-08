@@ -1,5 +1,5 @@
 /* XPM */
-static char * lineplot_disabled_xpm[] = {
+static const char * lineplot_disabled_xpm[] = {
 "20 20 5 1",
 " 	c None",
 ".	c #495664",

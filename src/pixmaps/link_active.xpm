@@ -1,5 +1,5 @@
 /* XPM */
-static char * link_active_xpm[] = {
+static const char * link_active_xpm[] = {
 "20 20 68 1",
 " 	c None",
 ".	c #DDCD7C",

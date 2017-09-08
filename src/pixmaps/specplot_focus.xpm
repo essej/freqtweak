@@ -1,5 +1,5 @@
 /* XPM */
-static char * specplot_focus_xpm[] = {
+static const char * specplot_focus_xpm[] = {
 "20 20 59 1",
 " 	c None",
 ".	c #5A80AA",

@@ -102,7 +102,7 @@ bool FTpresetBlender::setPreset(const string & name, int index)
 			// compare the proctype
 
 			if (pvec.size() <= n ||  pm->getName() != pvec[n]->getName()) {
-				fprintf (stderr, "mismatch at %d %d: %s   %u\n", i, n, pm->getName().c_str(), pvec.size());
+				fprintf (stderr, "mismatch at %d %d: %s   %lu\n", i, n, pm->getName().c_str(), pvec.size());
 				delete procvec;
 				return false;
 			}

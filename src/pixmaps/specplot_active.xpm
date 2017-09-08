@@ -1,5 +1,5 @@
 /* XPM */
-static char * specplot_active_xpm[] = {
+static const char * specplot_active_xpm[] = {
 "20 20 59 1",
 " 	c None",
 ".	c #DDCD7C",

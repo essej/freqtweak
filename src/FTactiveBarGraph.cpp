@@ -579,7 +579,7 @@ void FTactiveBarGraph::xToBinRange(int x, int &frombin, int &tobin)
 	// converts x coord into filter bin
 	// according to scaling
 
-	int bin, lbin, rbin;
+	int lbin, rbin;
 	int totbins = _specMod->getLength();
 	//float xscale = _width / (float)totbins;
 
@@ -589,7 +589,7 @@ void FTactiveBarGraph::xToBinRange(int x, int &frombin, int &tobin)
 	else if (x >= _width) x = _width-1;
 	
 	if (_xScaleType == XSCALE_1X) {
-		bin = rbin = lbin = (int)(x / _xscale);
+		rbin = lbin = (int)(x / _xscale);
 		//printf (" %d  %g  %d\n", x, bin*xscale, (int)(bin * xscale));
 		
 		// find lowest with same x
@@ -613,7 +613,7 @@ void FTactiveBarGraph::xToBinRange(int x, int &frombin, int &tobin)
 		}
 		else {
 		
-			bin = rbin = lbin = (int)(x / hxscale);
+			rbin = lbin = (int)(x / hxscale);
 			//printf (" %d  %g  %d\n", x, bin*xscale, (int)(bin * xscale));
 			
 			// find lowest with same x
@@ -740,7 +740,7 @@ void FTactiveBarGraph::binToXRange(int bin, int &fromx, int &tox)
 	// converts bin into x coord range
 	// according to scaling
 
-	int x, lx, rx;
+	int lx, rx;
 	int totbins = _specMod->getLength();
 	//float xscale = _width / (float)totbins;
 
@@ -750,7 +750,7 @@ void FTactiveBarGraph::binToXRange(int bin, int &fromx, int &tox)
 	
 	if (_xScaleType == XSCALE_1X) {
 		//bin = rbin = lbin = (int)(x / xscale);
-		x = lx = rx = (int) (bin * _xscale);
+		lx = rx = (int) (bin * _xscale);
 		//printf (" %d  %g  %d\n", x, bin*xscale, (int)(bin * xscale));
 		
 		// find lowest x with same bin
@@ -774,7 +774,7 @@ void FTactiveBarGraph::binToXRange(int bin, int &fromx, int &tox)
 		}
 		else {
 			//bin = rbin = lbin = (int)(x / xscale);
-			x = lx = rx = (int) (bin * hxscale );
+			lx = rx = (int) (bin * hxscale );
 			//printf (" %d  %g  %d\n", x, bin*xscale, (int)(bin * xscale));
 
 			// find lowest x with same bin
@@ -1837,9 +1837,8 @@ void FTactiveBarGraph::OnMouseActivity( wxMouseEvent &event)
 		}
 		
 		// compute difference in x and y from last
-		int diffX, diffY;
+		int diffX;
 		diffX = pX - _lastX;
-		diffY = pY - _lastY;
 		
 		int shiftbins = xDeltaToBinDelta (diffX);
 		//float shiftval = yToVal(pY) - yToVal(_lastY);

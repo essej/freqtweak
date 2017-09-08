@@ -1,5 +1,5 @@
 /* XPM */
-static char * specplot_disabled_xpm[] = {
+static const char * specplot_disabled_xpm[] = {
 "20 20 59 1",
 " 	c None",
 ".	c #495664",

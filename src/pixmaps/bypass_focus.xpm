@@ -1,5 +1,5 @@
 /* XPM */
-static char * bypass_focus_xpm[] = {
+static const char * bypass_focus_xpm[] = {
 "20 20 46 1",
 " 	c None",
 ".	c #5A80AA",

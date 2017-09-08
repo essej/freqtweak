@@ -1,5 +1,5 @@
 /* XPM */
-static char * grid_disabled_xpm[] = {
+static const char * grid_disabled_xpm[] = {
 "20 20 3 1",
 " 	c None",
 ".	c #3B4754",
