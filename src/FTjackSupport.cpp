@@ -38,6 +38,29 @@ using namespace std;
 
 #include <jack/jack.h>
 
+struct jack_lat_data {
+        PathInfo *tmppath;
+	FTprocessPath * ppath;
+};
+
+jack_lat_data _tmp_data;
+
+void latency_cb (jack_latency_callback_mode_t mode, void *arg)
+{
+	jack_latency_range_t range;
+        jack_nframes_t latency = ((jack_lat_data *)arg)->ppath->getSpectralEngine()->getLatency();
+	if (mode == JackCaptureLatency) {
+                jack_port_get_latency_range ( ((jack_lat_data *)arg)->tmppath->inputport, mode, &range);
+		range.min += latency;
+		range.max += latency;
+		jack_port_set_latency_range ( ((jack_lat_data *)arg)->tmppath->outputport, mode, &range);
+	} else {
+                jack_port_get_latency_range ( ((jack_lat_data *)arg)->tmppath->outputport, mode, &range);
+		range.min += latency;
+		range.max += latency;
+                jack_port_set_latency_range ( ((jack_lat_data *)arg)->tmppath->inputport, mode, &range);
+	}
+}
 
 FTjackSupport::FTjackSupport(const char * name, const char * dir)
 	:  _inited(false), _jackClient(0), _activePathCount(0), _activated(false), _bypassed(false)
@@ -268,6 +291,9 @@ FTprocessPath * FTjackSupport::setProcessPathActive (int index, bool active)
 			}
 		}
 
+                _tmp_data.tmppath = tmppath;
+                _tmp_data.ppath = ppath;
+                
 		// it only gets here if it is brand new, or going from inactive->active
 		
 		sprintf(nbuf,"in_%d", index + 1);
@@ -276,8 +302,9 @@ FTprocessPath * FTjackSupport::setProcessPathActive (int index, bool active)
 		
 		sprintf(nbuf,"out_%d", index + 1);
 		tmppath->outputport = jack_port_register (_jackClient, nbuf, JACK_DEFAULT_AUDIO_TYPE, JackPortIsOutput, 0);
-		jack_port_set_latency (tmppath->outputport, ppath->getSpectralEngine()->getLatency());
-
+		//jack_port_set_latency (tmppath->outputport, ppath->getSpectralEngine()->getLatency());
+                jack_set_latency_callback (_jackClient, latency_cb, &_tmp_data);
+                
 		tmppath->procpath = ppath;
 		tmppath->active = true;
 		
