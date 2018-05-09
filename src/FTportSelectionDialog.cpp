@@ -139,7 +139,7 @@ std::vector<wxString> FTportSelectionDialog::getSelectedPorts()
 	std::vector<wxString> pnames;
 
 	for (int i=0; i < n; i++) {
-		pnames.push_back(wxString(_selectedPorts.Item(i)->GetData()));
+		pnames.push_back(wxString(_selectedPorts.Item(i).GetData()));
 	}
 
 	return pnames;
