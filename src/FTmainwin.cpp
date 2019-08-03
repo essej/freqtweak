@@ -524,7 +524,6 @@ void FTmainwin::buildGui()
 	_inspecPanel = new wxPanel(_inspecSash, -1);
 	_inspecPanel->SetBackgroundColour(*wxBLACK);
 	_inspecPanel->SetThemeEnabled(false);
-	//_inspecSash->SetSashBorder(wxSASH_BOTTOM, true);
 	_inspecSash->SetSashVisible(wxSASH_BOTTOM, true);
 	_rowItems.push_back( _inspecSash);
 
@@ -656,7 +655,6 @@ void FTmainwin::buildGui()
 	_outspecPanel = new wxPanel(_outspecSash, -1);
 	_outspecPanel->SetBackgroundColour(*wxBLACK);
 	_outspecPanel->SetThemeEnabled(false);
-	//_outspecSash->SetSashBorder(wxSASH_BOTTOM, true);
 	_outspecSash->SetSashVisible(wxSASH_BOTTOM, true);
 	_rowItems.push_back (_outspecSash);
 
@@ -891,7 +889,6 @@ void FTmainwin::pushProcRow(FTspectrumModifier *specmod)
 	rpanel->SetThemeEnabled(false);
 	_rowPanels.push_back (rpanel);
 			
-	//sash->SetSashBorder(wxSASH_BOTTOM, true);
 	sash->SetSashVisible(wxSASH_BOTTOM, true);
 	// need to insert this as second to last
 	wxWindow * lastrow = _rowItems.back();
@@ -2707,7 +2704,7 @@ void FTmainwin::handleTitleButtonMouse (wxMouseEvent &event, bool minimized)
 	     evt != _pendingTitleEvents.end() ; ++evt)
 	{
 		(*evt)->ready = true;
-		AddPendingEvent (*(*evt));
+		GetEventHandler ()->AddPendingEvent (*(*evt));
 		delete (*evt);
 	}
 	_pendingTitleEvents.clear();

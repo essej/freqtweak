@@ -346,7 +346,7 @@ void FTmodulatorDialog::onModulatorDeath (FTmodulatorI * mod)
 	{
 		//cerr << "deleting modgui" << endl;
 		FTmodulatorGui * modgui = _modulatorGuis[mod];
-		_channelSizer->Remove ((wxSizer*)modgui);
+		_channelSizer->Detach ((wxSizer*)modgui);
 		modgui->Show(false);
 		_channelScroller->SetClientSize(_channelScroller->GetClientSize());
 		_channelScroller->Layout();
