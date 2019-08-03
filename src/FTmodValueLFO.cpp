@@ -145,7 +145,7 @@ void FTmodValueLFO::modulate (nframes_t current_frame, fft_data * fftdata, unsig
 	float ub,lb, tmplb, tmpub;
 	float * filter;
 	int len;
-	float minfreq, maxfreq;
+	float minfreq = 0.0, maxfreq = 0.0;
 	float depth = 1.0;
 	unsigned int minbin, maxbin;
 	float shiftval = 0;

@@ -1,5 +1,5 @@
 /* XPM */
-static char * barplot_disabled_xpm[] = {
+static const char * barplot_disabled_xpm[] = {
 "20 20 4 1",
 " 	c None",
 ".	c #2D3D4E",

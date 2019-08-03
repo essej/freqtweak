@@ -58,7 +58,7 @@ class FTportSelectionDialog
 
     wxListBox * _listBox;
     
-    wxStringList _selectedPorts;
+    wxArrayString _selectedPorts;
 
   private:
 	// any class wishing to process wxWindows events must use this macro

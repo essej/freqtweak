@@ -118,7 +118,7 @@ void FTmodRotateLFO::modulate (nframes_t current_frame, fft_data * fftdata, unsi
 	float * filter;
 	int len;
 	int i,j;
-	float minfreq, maxfreq;
+	float minfreq = 0.0, maxfreq = 0.0;
 	float depth = 1.0;
 	int minbin, maxbin;
 	double hzperbin;

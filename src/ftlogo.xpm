@@ -1,5 +1,5 @@
 /* XPM */
-static char * ftlogo_xpm[] = {
+static const char * ftlogo_xpm[] = {
 "70 40 752 2",
 "  	c None",
 ". 	c #D6D6D6",

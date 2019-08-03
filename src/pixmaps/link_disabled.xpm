@@ -1,5 +1,5 @@
 /* XPM */
-static char * link_disabled_xpm[] = {
+static const char * link_disabled_xpm[] = {
 "20 20 58 1",
 " 	c None",
 ".	c #444D57",

@@ -1,5 +1,5 @@
 /* XPM */
-static char * gridsnap_active_xpm[] = {
+static const char * gridsnap_active_xpm[] = {
 "20 20 4 1",
 " 	c None",
 ".	c #DDCD7C",

@@ -265,7 +265,7 @@ void FTspectragram::plotNextDataSpectragram (const float *data, int length)
 
 	
 	float dbval, sum;
-	int coli, i, k, j;
+	int coli, i, j;
 
 	double xSkipD = (double)length / (double)_width;
 	int    xSkipI = (int)(xSkipD + 0.5);
@@ -878,7 +878,7 @@ void FTspectragram::xToBinRange(int x, int &frombin, int &tobin)
 	// converts x coord into filter bin
 	// according to scaling
 
-	int bin, lbin, rbin;
+	int lbin, rbin;
 	int totbins = _length;
 	//int totbins = _specMod->getLength();
 	//float xscale = _width / (float)totbins;
@@ -889,7 +889,7 @@ void FTspectragram::xToBinRange(int x, int &frombin, int &tobin)
 	//else if (x >= _width) x = _width-1;
 	
 	if (_xScaleType == XSCALE_1X) {
-		bin = rbin = lbin = (int)(x / _xscale);
+		rbin = lbin = (int)(x / _xscale);
 		//printf (" %d  %g  %d\n", x, bin*xscale, (int)(bin * xscale));
 		
 		// find lowest with same x
@@ -913,7 +913,7 @@ void FTspectragram::xToBinRange(int x, int &frombin, int &tobin)
 		}
 		else {
 		
-			bin = rbin = lbin = (int)(x / hxscale);
+			rbin = lbin = (int)(x / hxscale);
 			//printf (" %d  %g  %d\n", x, bin*xscale, (int)(bin * xscale));
 			
 			// find lowest with same x
@@ -1000,7 +1000,7 @@ void FTspectragram::binToXRange(int bin, int &fromx, int &tox, int length, int b
 	// converts bin into x coord range
 	// according to scaling
 
-	int x, lx, rx;
+	int lx, rx;
 	int totbins = bins;
 	float xscale = length / (float)totbins;
 
@@ -1012,7 +1012,7 @@ void FTspectragram::binToXRange(int bin, int &fromx, int &tox, int length, int b
 	
 	if (_xScaleType == XSCALE_1X) {
 		//bin = rbin = lbin = (int)(x / xscale);
-		x = lx = rx = (int) (bin * xscale);
+		lx = rx = (int) (bin * xscale);
 		//printf (" %d  %g  %d\n", x, bin*xscale, (int)(bin * xscale));
 		
 		// find lowest x with same bin
@@ -1036,7 +1036,7 @@ void FTspectragram::binToXRange(int bin, int &fromx, int &tox, int length, int b
 		}
 		else {
 			//bin = rbin = lbin = (int)(x / xscale);
-			x = lx = rx = (int) (bin * hxscale );
+			lx = rx = (int) (bin * hxscale );
 			//printf (" %d  %g  %d\n", x, bin*xscale, (int)(bin * xscale));
 
 			// find lowest x with same bin

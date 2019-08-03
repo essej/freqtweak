@@ -3088,14 +3088,12 @@ void FTmainwin::updateAllExtra ()
 		
 			for (unsigned int m=0; m < filts.size(); ++m)
 			{
-				wxPanel ** rowpanels = 0;
 				FTactiveBarGraph **bargraphs = 0;
 			
 				if (filts[m]->getGroup() != lastgroup)
 				{				
 					rowcnt++;
 
-					rowpanels = _subrowPanels[rowcnt];
 					bargraphs = _barGraphs[rowcnt];
 					FTactiveBarGraph * graph = bargraphs[i];				
 					wxSashLayoutWindow * sash = _rowSashes[rowcnt];

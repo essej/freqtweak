@@ -1,5 +1,5 @@
 /* XPM */
-static char * bypass_selected_xpm[] = {
+static const char * bypass_selected_xpm[] = {
 "20 20 46 1",
 " 	c None",
 ".	c #7A9BBD",

@@ -24,7 +24,6 @@ using namespace std;
 
 #include <stdlib.h>
 
-
 /**
  * the following taken from SWH plugins utility functions
  * we'll wrap it up later
@@ -72,8 +71,12 @@ static void rms_env_free(rms_env *r)
 }
 
 static inline int f_round(float f) {
-        f += (3<<22);
-        return *((int*)&f) - 0x4b400000;
+	ls_pcast32 p;
+
+	p.f = f;
+	p.f += (3<<22);
+
+        return p.i - 0x4b400000;
 }
 
 

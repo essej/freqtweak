@@ -1,5 +1,5 @@
 /* XPM */
-static char * barplot_focus_xpm[] = {
+static const char * barplot_focus_xpm[] = {
 "20 20 4 1",
 " 	c None",
 ".	c #5A80AA",

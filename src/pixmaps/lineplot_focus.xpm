@@ -1,5 +1,5 @@
 /* XPM */
-static char * lineplot_focus_xpm[] = {
+static const char * lineplot_focus_xpm[] = {
 "20 20 5 1",
 " 	c None",
 ".	c #5A80AA",

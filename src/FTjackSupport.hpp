@@ -35,6 +35,16 @@ using namespace std;
 
 class FTprocessPath;
 
+struct PathInfo
+{
+  FTprocessPath * procpath;
+  jack_port_t * inputport;
+  jack_port_t * outputport;
+  bool active;
+  
+  list<string> inconn_list;
+  list<string> outconn_list;
+};
 
 class FTjackSupport
 	: public FTioSupport
@@ -100,17 +110,6 @@ class FTjackSupport
 	jack_client_t * _jackClient;
 	jack_nframes_t _sampleRate;
 	jack_nframes_t _maxBufsize;
-
-	struct PathInfo
-	{
-		FTprocessPath * procpath;
-		jack_port_t * inputport;
-		jack_port_t * outputport;
-		bool active;
-
-		list<string> inconn_list;
-		list<string> outconn_list;
-	};
 
 	// FIXME: use real data structure
 	PathInfo* _pathInfos[FT_MAXPATHS];

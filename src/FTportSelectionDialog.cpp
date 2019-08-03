@@ -115,7 +115,7 @@ void FTportSelectionDialog::update()
 		}
 		free (availports);
 
-		for (int i=0; i < _listBox->GetCount(); i++) {
+		for (unsigned int i=0; i < _listBox->GetCount(); i++) {
 			_listBox->Deselect(i);
 		}
 		if (connports) {
@@ -139,7 +139,7 @@ std::vector<wxString> FTportSelectionDialog::getSelectedPorts()
 	std::vector<wxString> pnames;
 
 	for (int i=0; i < n; i++) {
-		pnames.push_back(wxString(_selectedPorts.Item(i)->GetData()));
+		pnames.push_back(wxString(_selectedPorts.Item(i).GetData()));
 	}
 
 	return pnames;
@@ -148,7 +148,7 @@ std::vector<wxString> FTportSelectionDialog::getSelectedPorts()
 
 void FTportSelectionDialog::OnDeselectAll(wxCommandEvent &event)
 {
-	for (int i=0; i < _listBox->GetCount(); i++) {
+	for (unsigned int i=0; i < _listBox->GetCount(); i++) {
 		_listBox->Deselect(i);
 	}
 }
