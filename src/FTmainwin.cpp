@@ -524,7 +524,6 @@ void FTmainwin::buildGui()
 	_inspecPanel = new wxPanel(_inspecSash, -1);
 	_inspecPanel->SetBackgroundColour(*wxBLACK);
 	_inspecPanel->SetThemeEnabled(false);
-	//_inspecSash->SetSashBorder(wxSASH_BOTTOM, true);
 	_inspecSash->SetSashVisible(wxSASH_BOTTOM, true);
 	_rowItems.push_back( _inspecSash);
 
