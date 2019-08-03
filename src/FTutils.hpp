@@ -20,6 +20,7 @@
 #ifndef __FTUTILS_HPP__
 #define __FTUTILS_HPP__
 
+#include <stdint.h>
 #include <iostream>
 #include <sstream>
 #include <cmath>
