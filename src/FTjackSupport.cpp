@@ -287,7 +287,7 @@ FTprocessPath * FTjackSupport::setProcessPathActive (int index, bool active)
 				ppath = new FTprocessPath();
 			}
 			else {
-				return 0;
+				return NULL;
 			}
 		}
 
